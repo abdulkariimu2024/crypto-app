@@ -34,7 +34,7 @@ git clone https://github.com/your-username/crypto-app.git
 # Install pycryptodome with the command below
 pip install pycryptodome
 
-# THen run the application
+# Then run the application
 python main.py
 
 ## Usage
