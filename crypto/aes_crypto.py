@@ -1,6 +1,6 @@
+import base64
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
-import base64
 
 
 def pad(text):
@@ -16,11 +16,13 @@ def encrypt_aes(text):
     padded_text = pad(text)
     encrypted_bytes = cipher.encrypt(padded_text.encode())
 
-    return base64.b64encode(encrypted_bytes).decode(), key
+    return base64.b64encode(encrypted_bytes).decode(), base64.b64encode(key).decode()
 
 
 def decrypt_aes(cipher_text, key):
+    key = base64.b64decode(key)
     cipher = AES.new(key, AES.MODE_ECB)
+
     decoded = base64.b64decode(cipher_text)
     decrypted = cipher.decrypt(decoded)
 
