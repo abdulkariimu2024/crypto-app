@@ -48,11 +48,8 @@ venv\Scripts\activate
 3. Install dependencies
 pip install pycryptodome
 
-<<<<<<< HEAD
-Running the application
-=======
-# Then run the application
->>>>>>> 68d333f29ea468205c200ef23e0d9c4495bfbd1b
+4. Then run the application
+
 python main.py
 
 Usage
