@@ -9,7 +9,7 @@ Features
 - Encrypt and decrypt messages
 - Supports multiple algorithms:
   - Caesar Cipher
-  - Vigenère Cipher
+  - Vigenere Cipher
   - AES (Advanced Encryption Standard)
   - RSA Algorithm
 - User-friendly graphical interface (Tkinter)
